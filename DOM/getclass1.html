@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .head {
+            font-size: 30px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="head" onmouseover="changeColor2()" on>web tech</h1>
+    <h1 class="head">java script</h1>
+    <h1 class="head">dynamic</h1>
+
+    <button onclick="changeColor()" ondblclick="changeColor3()">click here</button>
+    <button onclick="changeColor2()">same</button>
+    <button onclick="changeColor3()">normal</button>
+
+
+    <script>
+        function changeColor(color) {
+            var z = document.getElementsByClassName("head");
+            z[0].style.color = "red";
+            z[1].style.color = "blue";
+            z[2].style.color = "hotpink";
+        }
+        //console.log(z);
+        function changeColor2(color) {
+            var z = document.getElementsByClassName("head");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.color = 'blue';
+            }
+        }
+        function changeColor3(color) {
+            var z = document.getElementsByClassName("head");
+            for (i = 0; i < z.length; i++) {
+                z[i].style.color = 'black';
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

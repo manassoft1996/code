@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head">this is heading</h1>
+    <script>
+        var h1 = document.getElementById("head");
+        var sp = document.createElement("span");
+        sp.textContent = "this is span";
+        // h1.insertAdjacentElement("afterbegin", sp);//this is spanthis is heading
+        //  h1.insertAdjacentElement("afterend", sp);//this is heading    this is span.
+        h1.insertAdjacentElement("beforebegin", sp);//this is span      this is heading.
+
+    </script>
+</body>
+
+</html>

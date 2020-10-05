@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+
+<body>
+    <form name="form" id="form">
+        Name:<input type="text" name="uname" id="n1"><br><br>.
+        Password:<input type="password" name="pass" id="pass1"><br>
+        <input type="submit" value="submit" name="submit" onclick="Validate()">
+    </form>
+    <script>
+        function Validate() {
+            //var unname1 = document.getElementById("n1");
+            var name = document.form.uname.value;//accessing the whol form.
+            var passs = document.form.pass.value;
+            if (name == null || name == " ") {
+                alert("name field can cot be empty");
+            }
+            else {
+                text = "invalid";
+                alert("invalid input");
+            }
+            if (passs.length < 6) {
+                alert("pass must be 6 character long");
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

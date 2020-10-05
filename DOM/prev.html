@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>this is before heading</p>
+    <p>thisiiiiiiiiiiiiiiiiiiii</p>
+    <h1 id="head">
+        <!--thiscooment-->lllllllllllllllllllllllllllllllltext
+    </h1>
+    <p>jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    <p>nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
+    <script>
+        var h1 = document.getElementById("head");
+        console.log(h1.previousSibling);//it will not neglet text.(text as a child)//#text
+        // document.write(h1.parentElement);
+        console.log(h1.previousElementSibling);//<p>thisiiiiiiiiiiiiiiiiiiii</p>(previous)
+        //(it is not consider the text as child.)
+    </script>
+</body>
+
+</html>

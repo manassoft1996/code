@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- overWriting eveent handler in javascript -->
+    <h1>my name is manaas</h1>
+    <button id="mybtn">click</button>
+
+
+    <script>
+        var btn = document.getElementById("mybtn");
+        btn.onclick = disp;
+        btn.onclick = disp1;//latect event so that it will show it's content.overWriting eveent handler in javascript
+        //btn.onclick = disp2;
+        function disp() {
+            window.alert("event binding with javascript");
+        }
+        function disp1() {
+            window.alert("overWriting eveent handler in javascript");
+        }
+        // function disp2() {
+        //     window.alert("mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
+        // }
+    </script>
+</body>
+
+</html>

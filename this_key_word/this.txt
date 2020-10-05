@@ -1,0 +1,4 @@
+this keyword invoking cureent cinareo.
+Class {
+    //Class as category.
+}

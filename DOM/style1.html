@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="head" style="background: yellow; color: red;">this is heading</h1>
+    <script>
+        var h1 = document.getElementById("head");
+        var css = h1.style;
+        //console.log(css.cssText);
+        css.cssText = "font-size: 90px; background-color: pink;"
+        console.log(css.length);//2 i.e  font-size,background-color
+        ///////////to tetch the value of css property.////
+        console.log(css.item(0));//font-size
+        console.log(css.getPropertyValue("background-color"));//pink
+        css.setProperty("color", "black");
+        css.setProperty("background-color", "yellow");
+    </script>
+</body>
+
+</html>

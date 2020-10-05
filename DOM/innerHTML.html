@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="myul">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>angular</li>
+        <li>react</li>
+    </ul>
+    <script>
+        var ul = document.getElementById("myul");
+        var ele = "<h1>this is heading</h1>"
+        ul.innerHTML = "<h1>this is headingooooooooooooo</h1>";
+        console.log(ul);//this is headingooooooooooooo
+        //in this case the innerHTML is replaced by the target node i.e <h1>this is headingooooooooooooo</h1>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one {
+            width: 400px;
+            height: 400px;
+            background-color: brown;
+            font-size: 20px;
+            padding: 65px;
+            border: solid 5px green;
+        }
+
+        #two {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            font-size: 20px;
+            padding: 25px;
+        }
+
+        #three {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            font-size: 20px;
+            padding: 3px;
+        }
+
+        #four {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            padding: 18px;
+            text-align: center;
+            padding-left: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- eventPropagation/flow -->
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+                <div id="four">4</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        var three = document.getElementById("three");
+        var four = document.getElementById("four");
+
+        //bubbling phase [buttom to low]
+        // one.addEventListener("click", function () {
+        //     console.log(1), false
+        // });
+        // two.addEventListener("click", function () {
+        //     console.log(2), false
+        // });
+        // three.addEventListener("click", function () {
+        //     console.log(3), false
+        // });
+        // four.addEventListener("click", function () {
+        //     console.log(4), false
+        // });
+        // **************************************************************************
+        //capture phase [top to buttom]
+        one.addEventListener("click", function () {
+            console.log(1), true
+        });
+        two.addEventListener("click", function () {
+            console.log(2), true
+        });
+        three.addEventListener("click", function () {
+            console.log(3), true
+        });
+        four.addEventListener("click", function () {
+            console.log(4), true
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+/ if the no of argument will 3 then it will take three rest are stored i a OBJECT.
+//extra argument why?
+//ans.it will not check with past 
+//it will not worry about arguments.
+//if we given 3 arguments and we asign 2 arguments value in output section it will show 2 value and one undefind value.
+//EXTRA Aguments are stored in ARGUMENT OBJECT.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="head1">
+        web tech
+    </h1>
+    <div>
+        <h1 class="ele">div heading</h1>
+        <p>this pragraph is inside the div elemnt.</p>
+        <a href="" class="ele">click me</a>
+        <h2 id="head">
+            kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+        </h2>
+    </div>
+    <script>
+        var res = document.querySelectorAll("#head,.head1");//node list will print not the object.
+        console.log(res);
+        //qs w.r.t classNAme
+        var res1 = document.querySelector(".ele");
+        console.log(res1);
+        //qs with respect to tag name
+        var res3 = document.querySelector("p");
+        console.log(res3);
+        //qs with respect to all element(like----class , id , and tag).
+        var res4 = document.querySelectorAll(".ele,#head,p");
+        console.log(res4);
+    </script>
+</body>
+
+</html>

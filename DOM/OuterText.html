@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="myul">
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+        <li>angular</li>
+        <li>react</li>
+    </ul>
+    <script>
+        var ul = document.getElementById("myul");
+        var ele = "<h1>this is heading</h1>"
+        ul.outerText = "<h1>this is headingooooooooooooo</h1>";
+        console.log(ul);//if we use outerHtml is used to repalce all html elements like here ul with <h1>this is headingooooooooooooo</h1>.
+    </script>
+</body>
+
+</html>

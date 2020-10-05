@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function numberValidation() {
+            var n = document.form.numbers.value;
+            if (isNaN(n) || n < 11) {
+
+                document.getElementById(
+                    "numberText").innerHTML =
+                    "Please enter Numeric value";
+                return false;
+            } else {
+
+                document.getElementById(
+                    "numberText").innerHTML =
+                    "Numeric value is: " + n;
+                return true;
+            }
+        } 
+    </script>
+</head>
+
+<body>
+
+    <form name="form" onsubmit="return numberValidation()">
+        Number: <input type="text" name="numbers" />
+        <span id="numberText"></span>
+        <br />
+        <input type="submit" value="submit" />
+    </form>
+</body>
+
+</html>

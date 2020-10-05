@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Event binding with html attributes -->
+    <h1 id="head">This is a heading</h1>
+    <button onclick="display()">clickme</button>
+    <script>
+        function display() {
+            //window.alert("button clicked");
+            var h1 = document.getElementById("head");
+            h1.style.color = "red";
+        }
+    </script>
+</body>
+
+</html>

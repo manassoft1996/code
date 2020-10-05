@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="form1" id="form1">
+        Name:<input type="text" name="uname"><br><br>.
+        Password:<input type="password" name="pass"><br>
+        <input type="submit" value="submit" name="submit">
+    </form>
+    <hr>
+    <form name="form2" id="form2">
+        Name:<input type="text" name="uname1"><br><br>.
+        Password:<input type="password" name="pass1"><br>
+        <input type="submit" value="submit2" name="submit">
+    </form>
+    <script>
+        var x = document.forms["form1"];
+        console.log(x);
+        var y = document.forms["form2"];
+        console.log(y);
+
+        //directly using name attribute value.
+        var z = document.form2;
+        console.log(z);
+        //using id attribute
+        var f1 = document.getElementById("form1");
+        var f2 = document.getElementById("form2");
+        console.log(f1);
+        console.log(f2);
+    </script>
+</body>
+
+</html>

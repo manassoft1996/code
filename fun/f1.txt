@@ -1,0 +1,26 @@
+//passing anonymous function as argument.
+function display(myFunc) {//myFunc is the anonymous function and it is used as argument that is called.
+    return myFunc();
+}
+console.log(display(function () { return "anonymous function"; }));//display method with anonymous function.
+
+description:
+case 1://////////////////////////////////////////////////////////////
+function display(name){
+    return name;
+}
+display("singh");
+
+case 2:////////////////////////////////////////////////////////////////////////////////////////////
+function display(myFunc){// here we pass anonymous function as argument.
+    return myFunc();
+}
+console.log(display(function () { return "anonymous function"; }));
+
+function () is stored inside in myFunc()
+
+var myFunc = function(){
+    return "styring";
+}
+myFunc();
+case 3:///////////////////////////////////////////////////////

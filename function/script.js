@@ -1,0 +1,1 @@
+document.write("hello world and external way of javascript." + "</br>");

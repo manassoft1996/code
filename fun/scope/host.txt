@@ -1,0 +1,42 @@
+move the declaration outside the function.
+var a = 4;
+var a;
+a = 4;
+engine will read like that.
+//----------------------------------------
+var a = 10;
+console.log(a); =>> var a;
+var b = 23;
+
+//1. variable hoisting is a behaviour of moving decalaration to the top of the function ,
+ if defind inside a function. or the top of 
+global content , if decalration is outside the function.// defination of variable hoisting.
+
+2.  variable can be used before it has been declared.
+3. only variable decalaration are hoisted to the top , but not variable initialization.{
+    var a =10;
+    console.log(a);
+    var b =12;
+}
+4. {var a = 20;
+console.log(a+" "+b);  equivalent code is ::::::::::::::::::1. var a; 2. var b; 3. a =20; 4. b =23; 5. then console.log(a+""+b);
+var b = 23;                  
+console.log(a+" "+b);}
+//
+var i = "hello";
+console.log(i);
+function show() {
+    console.log(i);
+    var i = "pinky";
+}
+ans: 
+var i;
+i="hello";
+console.log();
+function show() {
+    var i;
+    console.log(i);
+    i="pinky";
+
+////////////////////////////////////////////////
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child relationship</title>
+</head>
+
+<body>
+    <h1 id="head">
+        THis is heading<span>this is span</span>
+    </h1>
+
+
+
+    <script>
+        var h1 = document.getElementById("head");
+        console.log(h1.childNodes);//it will not neglet text.(text as a child)
+        // document.write(h1.parentElement);
+        console.log(h1.children);//it negelt the text. but show the sapn value.
+        //(it is not consider the text as child.)
+    </script>
+</body>
+
+</html>
